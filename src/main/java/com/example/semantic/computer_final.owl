@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://localhost/computer#"
+     xml:base="http://localhost/computer"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:computer="http://localhost/computer#">
+    <owl:Ontology rdf:about="http://localhost/computer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/computer#name -->
+
+    <owl:AnnotationProperty rdf:about="http://localhost/computer#name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/computer#hasDisplay -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasDisplay">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#Display"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasGPU -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasGPU">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#GPU"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasHDD -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasHDD">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#HDD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasRAM -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasRAM">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#RAM"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasOS -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasOS">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#OS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasCPU -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasCPU">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#CPU"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/computer#Acer_nb -->
+
+    <owl:Class rdf:about="http://localhost/computer#Acer_nb">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Laptop"/>
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Notebook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Acer_pc -->
+
+    <owl:Class rdf:about="http://localhost/computer#Acer_pc">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#PC"/>
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Personal_Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#CPU -->
+
+    <owl:Class rdf:about="http://localhost/computer#CPU">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CPU</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Computer -->
+
+    <owl:Class rdf:about="http://localhost/computer#Computer"/>
+    
+
+
+    <!-- http://localhost/computer#ComputerParts -->
+
+    <owl:Class rdf:about="http://localhost/computer#ComputerParts"/>
+    
+
+
+    <!-- http://localhost/computer#Dell_nb -->
+
+    <owl:Class rdf:about="http://localhost/computer#Dell_nb">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Laptop"/>
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Notebook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Dell_pc -->
+
+    <owl:Class rdf:about="http://localhost/computer#Dell_pc">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#PC"/>
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Personal_Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Display -->
+
+    <owl:Class rdf:about="http://localhost/computer#Display">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Display</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#GPU -->
+
+    <owl:Class rdf:about="http://localhost/computer#GPU">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">GPU</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#HDD -->
+
+    <owl:Class rdf:about="http://localhost/computer#HDD">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">HDD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Laptop -->
+
+    <owl:Class rdf:about="http://localhost/computer#Laptop">
+        <owl:equivalentClass rdf:resource="http://localhost/computer#Notebook"/>
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Computer"/>
+        <owl:disjointWith rdf:resource="http://localhost/computer#PC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Lenovo_nb -->
+
+    <owl:Class rdf:about="http://localhost/computer#Lenovo_nb">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Laptop"/>
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Notebook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Lenovo_pc -->
+
+    <owl:Class rdf:about="http://localhost/computer#Lenovo_pc">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#PC"/>
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Personal_Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Notebook -->
+
+    <owl:Class rdf:about="http://localhost/computer#Notebook">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#OS -->
+
+    <owl:Class rdf:about="http://localhost/computer#OS">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">OS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#PC -->
+
+    <owl:Class rdf:about="http://localhost/computer#PC">
+        <owl:equivalentClass rdf:resource="http://localhost/computer#Personal_Computer"/>
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Personal_Computer -->
+
+    <owl:Class rdf:about="http://localhost/computer#Personal_Computer">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#RAM -->
+
+    <owl:Class rdf:about="http://localhost/computer#RAM">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">RAM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/computer#acer_pc1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#acer_pc1">
+        <rdf:type rdf:resource="http://localhost/computer#Acer_pc"/>
+        <rdf:type rdf:resource="http://localhost/computer#Computer"/>
+        <rdf:type rdf:resource="http://localhost/computer#PC"/>
+        <rdf:type rdf:resource="http://localhost/computer#Personal_Computer"/>
+        <hasGPU rdf:resource="http://localhost/computer#gs_n2"/>
+        <hasHDD rdf:resource="http://localhost/computer#hadd_n1"/>
+        <hasRAM rdf:resource="http://localhost/computer#ram_n1"/>
+        <hasOS rdf:resource="http://localhost/computer#os_n2"/>
+        <hasCPU rdf:resource="http://localhost/computer#cpu_n2"/>
+        <name>ACER Predator G3-605-458G1T00MGi/T013</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#cpu_n1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#cpu_n1">
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <name>Intel Core i7-5500U (2.40 GHz, 4MB L3 Cache, up to 3.00 GHz)</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#cpu_n2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#cpu_n2">
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <name>Intel® Core™ i5-4590 (Up to 3.70 GHz)</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#dell_n1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#dell_n1">
+        <rdf:type rdf:resource="http://localhost/computer#Computer"/>
+        <rdf:type rdf:resource="http://localhost/computer#Dell_nb"/>
+        <rdf:type rdf:resource="http://localhost/computer#Laptop"/>
+        <rdf:type rdf:resource="http://localhost/computer#Notebook"/>
+        <hasDisplay rdf:resource="http://localhost/computer#dp_n3"/>
+        <hasGPU rdf:resource="http://localhost/computer#gs_n1"/>
+        <hasHDD rdf:resource="http://localhost/computer#hadd_n1"/>
+        <hasRAM rdf:resource="http://localhost/computer#ram_n1"/>
+        <hasOS rdf:resource="http://localhost/computer#os_n2"/>
+        <hasCPU rdf:resource="http://localhost/computer#cpu_n1"/>
+        <name>DELL XPS 13-W561058TH</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#dp_n1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#dp_n1">
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdf:type rdf:resource="http://localhost/computer#Display"/>
+        <name>14 inch (1920x1080) Full HD</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#dp_n2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#dp_n2">
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdf:type rdf:resource="http://localhost/computer#Display"/>
+        <name>12.5 inch (1920 x 1080) Full HD IPS 400 nits 10-Point Multitouch Screen</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#dp_n3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#dp_n3">
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdf:type rdf:resource="http://localhost/computer#Display"/>
+        <name>13.3 inch (3200x1800)</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#gs_n1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#gs_n1">
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdf:type rdf:resource="http://localhost/computer#GPU"/>
+        <name>Intel HD Graphics 5500</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#gs_n2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#gs_n2">
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdf:type rdf:resource="http://localhost/computer#GPU"/>
+        <name>Nvidia GTX760 1.5GB DDR5</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#hadd_n1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#hadd_n1">
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdf:type rdf:resource="http://localhost/computer#HDD"/>
+        <name>256 GB SSD</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#lenovo_n1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#lenovo_n1">
+        <rdf:type rdf:resource="http://localhost/computer#Computer"/>
+        <rdf:type rdf:resource="http://localhost/computer#Laptop"/>
+        <rdf:type rdf:resource="http://localhost/computer#Lenovo_nb"/>
+        <rdf:type rdf:resource="http://localhost/computer#Notebook"/>
+        <hasDisplay rdf:resource="http://localhost/computer#dp_n1"/>
+        <hasGPU rdf:resource="http://localhost/computer#gs_n1"/>
+        <hasHDD rdf:resource="http://localhost/computer#hadd_n1"/>
+        <hasRAM rdf:resource="http://localhost/computer#ram_n1"/>
+        <hasOS rdf:resource="http://localhost/computer#os_n1"/>
+        <hasCPU rdf:resource="http://localhost/computer#cpu_n1"/>
+        <name>Lenovo ThinkPad X1 Carbon-20BTA0PN00</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#lenovo_n2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#lenovo_n2">
+        <rdf:type rdf:resource="http://localhost/computer#Computer"/>
+        <rdf:type rdf:resource="http://localhost/computer#Laptop"/>
+        <rdf:type rdf:resource="http://localhost/computer#Lenovo_nb"/>
+        <rdf:type rdf:resource="http://localhost/computer#Notebook"/>
+        <hasDisplay rdf:resource="http://localhost/computer#dp_n2"/>
+        <hasGPU rdf:resource="http://localhost/computer#gs_n1"/>
+        <hasHDD rdf:resource="http://localhost/computer#hadd_n1"/>
+        <hasRAM rdf:resource="http://localhost/computer#ram_n1"/>
+        <hasOS rdf:resource="http://localhost/computer#os_n1"/>
+        <hasCPU rdf:resource="http://localhost/computer#cpu_n1"/>
+        <name>Lenovo ThinkPad Yoga 12-20DL006JTH</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#lenovo_pc1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#lenovo_pc1">
+        <rdf:type rdf:resource="http://localhost/computer#Computer"/>
+        <rdf:type rdf:resource="http://localhost/computer#Lenovo_pc"/>
+        <rdf:type rdf:resource="http://localhost/computer#PC"/>
+        <rdf:type rdf:resource="http://localhost/computer#Personal_Computer"/>
+        <hasGPU rdf:resource="http://localhost/computer#gs_n2"/>
+        <hasHDD rdf:resource="http://localhost/computer#hadd_n1"/>
+        <hasRAM rdf:resource="http://localhost/computer#ram_n1"/>
+        <hasOS rdf:resource="http://localhost/computer#os_n1"/>
+        <hasCPU rdf:resource="http://localhost/computer#cpu_n2"/>
+        <name>Lenovo ThinkCentre E73 Tower i7-4790s 4GB 1TB DVDRW MCR GT620-1G Legacy DOS 333y (Black)  </name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#os_n1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#os_n1">
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdf:type rdf:resource="http://localhost/computer#OS"/>
+        <name>Windows 10 Pro 64 (64 Bit)</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#os_n2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#os_n2">
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdf:type rdf:resource="http://localhost/computer#OS"/>
+        <name>Windows 8.1 (64 Bit)</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#ram_n1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#ram_n1">
+        <rdf:type rdf:resource="http://localhost/computer#ComputerParts"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <name>8 GB DDR3L</name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
